@@ -8,16 +8,16 @@ type Cart = {
 type CartItem = {
   id: string;
   name: string;
-  qunatity: number;
+  quantity: number;
 };
 
 // context
-type CartContext = Cart & {
+type CartContextType = Cart & {
   addItem: (item: CartItem) => void;
   removeItem: (id: string) => void;
   clearCart: () => void;
 };
-const cartContext = createContext<CartContext | null>(null);
+const CartContext = createContext<CartContextType | null>(null);
 
 // reducer
 type ActionType =
@@ -63,15 +63,15 @@ const CartProvider = ({ children }: { children: React.ReactNode }) => {
   };
 
   return (
-    <cartContext.Provider value={{ items, addItem, removeItem, clearCart }}>
+    <CartContext.Provider value={{ items, addItem, removeItem, clearCart }}>
       {children}
-    </cartContext.Provider>
+    </CartContext.Provider>
   );
 };
 
 // view
 const MyCart1 = () => {
-  const conetxt = useContext(cartContext);
+  const conetxt = useContext(CartContext);
 
   if (!conetxt) return null;
 
@@ -90,7 +90,7 @@ const MyCart1 = () => {
       </ul>
       <button
         onClick={() =>
-          addItem({ id: generatedId(conetxt), name: "Item", qunatity: 1 })
+          addItem({ id: generatedId(conetxt), name: "Item", quantity: 1 })
         }
       >
         Add Item
@@ -114,7 +114,7 @@ export default App;
 
 // bonus
 const useCart = () => {
-  const conetxt = useContext(cartContext);
+  const conetxt = useContext(CartContext);
   if (!conetxt) throw new Error("useCart must be used within a CartProvider");
   return conetxt;
 };
@@ -136,7 +136,7 @@ const MyCart2 = () => {
       </ul>
       <button
         onClick={() =>
-          addItem({ id: generatedId({ items }), name: "Item", qunatity: 1 })
+          addItem({ id: generatedId({ items }), name: "Item", quantity: 1 })
         }
       >
         Add Item
