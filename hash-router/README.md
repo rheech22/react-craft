@@ -24,4 +24,4 @@ Global State Management with Context + Reducer
 
 ## 🔥 Link
 
-- [Click to see the implementation.](./src/App.tsx)
+- [Click to see the implementation.](./src/JSXRouteVersion.tsx)
