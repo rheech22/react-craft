@@ -17,3 +17,7 @@ Implement a custom hook useDebounce that delays updating a value until after a s
 - Create a SearchInput component that:
 - Displays both the current value and the debounced value.
 - Logs the debounced value to the console when it updates.
+
+## 🔥 Link
+
+- [Click to see the implementation.](./src/App.tsx)

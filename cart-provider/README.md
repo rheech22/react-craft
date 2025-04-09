@@ -30,3 +30,7 @@ Implement a shopping cart feature using React’s Context API and useReducer.
 ## ⭐ Bonus
 
 - Create a custom hook `useCart()` to encapsulate context access.
+
+## 🔥 Link
+
+- [Click to see the implementation.](./src/App.tsx)
