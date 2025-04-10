@@ -2,7 +2,7 @@
 
 ## 📋 Task
 
-Global State Management with Context + Reducer
+Create a simple hash-based router without using any external libraries.
 
 ## ✅ Requirements
 
