@@ -36,3 +36,8 @@ function Toolbar() {
 
 - [Click to see the implementation. (Not Optimized)](./src/NotOptimizedVersion.tsx)
 - [Click to see the implementation. (Optimized)](./src/OptimizedVersion.tsx)
+
+## ✨ References
+
+- https://jeonghwan-kim.github.io/dev/2022/04/28/use-context.html
+- https://www.developerway.com/posts/how-to-write-performant-react-apps-with-context#part4
