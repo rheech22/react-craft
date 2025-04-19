@@ -14,10 +14,10 @@ export const Stagger = () => {
       animate($squares, {
         scale: [{ to: [0, 1.25] }, { to: 1 }],
         boxShadow: [
-          { to: "0 0 1rem 0 currentColor" },
+          { to: "0 0 2rem 0 currentColor" },
           { to: "0 0 0rem 0 currentColor" },
         ],
-        delay: stagger(100, {
+        delay: stagger(200, {
           grid: [11, 4],
         }),
       });
