@@ -6,10 +6,9 @@ import {
   Scope,
 } from "animejs";
 import { useEffect, useRef, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+import reactLogo from "../assets/react.svg";
 
-function App() {
+export const Rotation = () => {
   const root = useRef(null);
   const scope = useRef<Scope | null>(null);
   const [rotations, setRotations] = useState(0);
@@ -49,17 +48,19 @@ function App() {
   };
 
   return (
-    <div ref={root}>
-      <div>
+    <div
+      ref={root}
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <div style={{ marginBottom: "1rem" }}>
         <img src={reactLogo} className="logo" alt="React logo" />
       </div>
-      <div>
-        <fieldset>
-          <button onClick={handleClick}>rotations: {rotations}</button>
-        </fieldset>
-      </div>
+      <button onClick={handleClick}>rotations: {rotations}</button>
     </div>
   );
-}
-
-export default App;
+};
