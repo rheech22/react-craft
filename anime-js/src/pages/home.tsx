@@ -6,6 +6,9 @@ export const Home = () => {
       <li>
         <Link to="/rotation">Rotation</Link>
       </li>
+      <li>
+        <Link to="/stagger">Stagger</Link>
+      </li>
     </ul>
   );
 };

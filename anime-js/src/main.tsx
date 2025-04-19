@@ -6,6 +6,7 @@ import "./index.css";
 
 import { Home } from "./pages/home";
 import { Rotation } from "./pages/rotation";
+import { Stagger } from "./pages/stagger";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/rotation",
     element: <Rotation />,
+  },
+  {
+    path: "/stagger",
+    element: <Stagger />,
   },
 ]);
 
