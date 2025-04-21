@@ -9,6 +9,9 @@ export const Home = () => {
       <li>
         <Link to="/stagger">Stagger</Link>
       </li>
+      <li>
+        <Link to="/shuffle">Shuffle</Link>
+      </li>
     </ul>
   );
 };
