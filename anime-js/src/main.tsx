@@ -8,6 +8,7 @@ import { Home } from "./pages/home";
 import { Rotation } from "./pages/rotation";
 import { Stagger } from "./pages/stagger";
 import { Shuffle } from "./pages/shuffle";
+import { Flip } from "./pages/flip";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/shuffle",
     element: <Shuffle />,
+  },
+  {
+    path: "/flip",
+    element: <Flip />,
   },
 ]);
 

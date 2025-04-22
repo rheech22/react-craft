@@ -12,6 +12,9 @@ export const Home = () => {
       <li>
         <Link to="/shuffle">Shuffle</Link>
       </li>
+      <li>
+        <Link to="/flip">Flip</Link>
+      </li>
     </ul>
   );
 };
